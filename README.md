@@ -24,3 +24,11 @@ batch_size:   训练模型难道不设置这个嘛？ pass
 write_images : 是否模型权重可视化。
 
 update_freq :  可选batch、epoch、整数。在（可选内容）之后进行训练数据采集。
+# code--tf1
+log_dir = "logs_date/" + datetime.datetime.now().strftime("%m-%d--%H%M%S")
+
+log_dir 设置存贮位置及名称 
+
+tensorboard_callback = tf.compat.v1.keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=1, write_grads=True)
+
+无需导入Tensorboard 模块
