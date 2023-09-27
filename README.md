@@ -32,3 +32,11 @@ log_dir 设置存贮位置及名称
 tensorboard_callback = tf.compat.v1.keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=1, write_grads=True)
 
 无需导入Tensorboard 模块
+# 拉起Tensorboard
+在数据所在的文件夹打开CMD，或Shift 鼠标右键开启  
+
+输入   tensorboard --logdir=你的数据所在文件名   回车
+
+等待------
+
+出现地址点击或复制到浏览器
