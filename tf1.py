@@ -1,8 +1,6 @@
 import tensorflow as tf
 import datetime
 
-tf.compat.v1.disable_v2_behavior()
-
 mnist = tf.keras.datasets.mnist
 
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
